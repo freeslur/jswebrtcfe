@@ -4,6 +4,7 @@ var _socket = _interopRequireDefault(require("socket.io"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+const socket = (0, _socket.default)();
 const myFace = document.getElementById("myFace");
 let myStream;
 
