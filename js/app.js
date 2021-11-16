@@ -26,21 +26,20 @@ function _getMedia() {
 
           case 3:
             myStream = _context.sent;
-            console.log(myStream);
-            _context.next = 10;
+            _context.next = 9;
             break;
 
-          case 7:
-            _context.prev = 7;
+          case 6:
+            _context.prev = 6;
             _context.t0 = _context["catch"](0);
             console.log(_context.t0.message);
 
-          case 10:
+          case 9:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 7]]);
+    }, _callee, null, [[0, 6]]);
   }));
   return _getMedia.apply(this, arguments);
 }
