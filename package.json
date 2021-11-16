@@ -4,7 +4,7 @@
   "description": "webrtc fe demo",
   "main": "index.js",
   "repository": "git@github.com:freeslur/webrtcdemo.git",
-  "homepage": "",
+  "homepage": "https://freeslur.github.io/jswebrtcfe",
   "author": "Namyong Kim <freeslur@gmail.com>",
   "license": "MIT",
   "scripts": {
