@@ -2,7 +2,7 @@ const myFace = document.getElementById("myFace");
 
 let myStream;
 
-async function getMedia() {
+function getMedia() {
   try {
     // myStream = await navigator.mediaDevices.getUserMedia({
     //   audio: true,
