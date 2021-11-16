@@ -2,8 +2,9 @@ const myFace = document.getElementById("myFace");
 
 let myStream;
 
-function getMedia() {
+async function getMedia() {
   try {
+    myStream = await myFace.style.width;
     // myStream = await navigator.mediaDevices.getUserMedia({
     //   audio: true,
     //   video: true,
