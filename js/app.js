@@ -17,29 +17,22 @@ function _getMedia() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
-            _context.next = 3;
-            return navigator.mediaDevices.getUserMedia({
-              audio: true,
-              video: true
-            });
+            try {
+              // myStream = await navigator.mediaDevices.getUserMedia({
+              //   audio: true,
+              //   video: true,
+              // });
+              console.log(myStream);
+            } catch (e) {
+              console.log(e.message);
+            }
 
-          case 3:
-            myStream = _context.sent;
-            _context.next = 9;
-            break;
-
-          case 6:
-            _context.prev = 6;
-            _context.t0 = _context["catch"](0);
-            console.log(_context.t0.message);
-
-          case 9:
+          case 1:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 6]]);
+    }, _callee);
   }));
   return _getMedia.apply(this, arguments);
 }
