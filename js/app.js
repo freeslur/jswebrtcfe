@@ -1,6 +1,5 @@
 "use strict";
 
-const socket = io();
 const myFace = document.getElementById("myFace");
 let myStream;
 
