@@ -1,0 +1,27 @@
+
+  /**
+   * @license
+   * jswebrtcfe.js v1.0.0
+   * Released under the MIT License.
+   */
+
+import { io } from 'socket.io-client';
+
+io();
+document.getElementById("myFace");
+let myStream;
+
+async function getMedia() {
+  try {
+    myStream = await navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+    });
+    console.log(myStream);
+  } catch (e) {
+    console.log(e.message);
+  }
+}
+
+getMedia();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLmVzLmpzIiwic291cmNlcyI6WyIuLi8uLi9zcmMvanMvYXBwLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGlvIH0gZnJvbSBcInNvY2tldC5pby1jbGllbnRcIjtcblxuY29uc3Qgc29ja2V0ID0gaW8oKTtcbmNvbnN0IG15RmFjZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwibXlGYWNlXCIpO1xuXG5sZXQgbXlTdHJlYW07XG5cbmFzeW5jIGZ1bmN0aW9uIGdldE1lZGlhKCkge1xuICB0cnkge1xuICAgIG15U3RyZWFtID0gYXdhaXQgbmF2aWdhdG9yLm1lZGlhRGV2aWNlcy5nZXRVc2VyTWVkaWEoe1xuICAgICAgYXVkaW86IHRydWUsXG4gICAgICB2aWRlbzogdHJ1ZSxcbiAgICB9KTtcbiAgICBjb25zb2xlLmxvZyhteVN0cmVhbSk7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICBjb25zb2xlLmxvZyhlLm1lc3NhZ2UpO1xuICB9XG59XG5cbmdldE1lZGlhKCk7XG4iXSwibmFtZXMiOlsiaW8iLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIiwibXlTdHJlYW0iLCJnZXRNZWRpYSIsIm5hdmlnYXRvciIsIm1lZGlhRGV2aWNlcyIsImdldFVzZXJNZWRpYSIsImF1ZGlvIiwidmlkZW8iLCJjb25zb2xlIiwibG9nIiwiZSIsIm1lc3NhZ2UiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUVlQSxFQUFFO0FBQ0ZDLFFBQVEsQ0FBQ0MsY0FBVCxDQUF3QixRQUF4QjtBQUVmLElBQUlDLFFBQUo7O0FBRUEsZUFBZUMsUUFBZixHQUEwQjtBQUN4QixNQUFJO0FBQ0ZELElBQUFBLFFBQVEsR0FBRyxNQUFNRSxTQUFTLENBQUNDLFlBQVYsQ0FBdUJDLFlBQXZCLENBQW9DO0FBQ25EQyxNQUFBQSxLQUFLLEVBQUUsSUFENEM7QUFFbkRDLE1BQUFBLEtBQUssRUFBRTtBQUY0QyxLQUFwQyxDQUFqQjtBQUlBQyxJQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWVIsUUFBWjtBQUNELEdBTkQsQ0FNRSxPQUFPUyxDQUFQLEVBQVU7QUFDVkYsSUFBQUEsT0FBTyxDQUFDQyxHQUFSLENBQVlDLENBQUMsQ0FBQ0MsT0FBZDtBQUNEO0FBQ0Y7O0FBRURULFFBQVEifQ==
