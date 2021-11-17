@@ -9,8 +9,15 @@ html(lang="en")
   body 
     header 
       h1 WebRTC Demo
-    main 
-      video#myFace(autoplay, playsinline, width="400", height="400")
-
-    script(src="https://cdn.socket.io/4.3.2/socket.io.min.js")
-    script(src="js/app.js") 
+    main
+      div#welcome
+        form
+          input(placeholder="Room name", required, type="text")
+          button Enter room 
+      div#call 
+        div#myStream
+          video#myFace(autoplay, playsinline, width="400", height="400")
+          button#mute Mute
+          button#camera Turn Camera Off
+          select#cameras
+    script(src="js/bundle.min.js") 
