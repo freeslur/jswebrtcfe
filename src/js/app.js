@@ -1,6 +1,6 @@
-// import { io } from "socket.io-client";
+import { io } from "socket.io-client";
 
-// const socket = io();
+const socket = io.connect("http://176.34.63.148:3000", { secure: false });
 const welcome = document.getElementById("welcome");
 const call = document.getElementById("call");
 const myFace = document.getElementById("myFace");
@@ -96,3 +96,5 @@ function handleWelcomeSubmit(event) {
 }
 
 welcomeForm.addEventListener("submit", handleWelcomeSubmit);
+
+socket.on("connection", () => console.log("Socket io connected."));
