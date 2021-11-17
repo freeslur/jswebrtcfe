@@ -11,14 +11,19 @@
     <header> 
       <h1>WebRTC Demo</h1>
     </header>
-    <main> 
-      <div id="myStream">
-        <video id="myFace" autoplay playsinline width="400" height="400"></video>
-        <button id="mute">Mute</button>
-        <button id="camera">Turn Camera Off</button>
-        <select id="cameras">
-          <option value="device">Face Camera </option>
-        </select>
+    <main>
+      <div id="welcome">
+        <form placeholder="Room name" required type="text">
+          <button>Enter room </button>
+        </form>
+      </div>
+      <div id="call"> 
+        <div id="myStream">
+          <video id="myFace" autoplay playsinline width="400" height="400"></video>
+          <button id="mute">Mute</button>
+          <button id="camera">Turn Camera Off</button>
+          <select id="cameras"></select>
+        </div>
       </div>
     </main>
     <script src="js/bundle.min.js"> </script>
